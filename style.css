@@ -1,51 +1,79 @@
 @import url("https://fonts.cdnfonts.com/css/bogart");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   height: 100%;
-  /* background-image: url(3650583.jpg); */
-  /* color: red; */
-  /* background-color: red; */
-  /* color: red; */
+  /* overflow: hidden; */
+  /* background-color: black; */
+  /* background-image: url("images/blob.svg  "); */
+  /* background-image: url("images/final-bg.svg");
+  background-size: contain; */
 }
-.fullbody {
+.firstPage {
   height: 100vh;
   width: 100%;
-  /* color: blue; */
   /* background-color: blue; */
   display: flex;
   flex-direction: row;
-  /* background-position: ; */
-  background-size: 60%;
-  background-image: url("images/Main.jpg");
+  background-image: url("images/final-bg.svg");
+  /* background-repeat: 0px; */
   background-repeat: no-repeat;
-  background-position: 720px 75px;
-  /* background-image: url("images/Main.jpg"); */
+  background-size: cover;
 }
 .leftbody {
   height: 100vh;
-  width: 58%;
-  /* background-color: red; */
-  /* font-family: "Protest Riot", sans-serif; */
-  /* font-weight: 400; */
-  /* font-style: normal; */
+  width: 52%;
   display: flex;
-  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 200px;
+  /* background-image: url("images/blob.svg"); */
+  background-size: cover;
+  /* padding-right: 200px; */
 }
 .rightbody {
+  /* background-color: white; */
   height: 100vh;
-  width: 42%;
-  /* background-image: url(images\8401.jpg); */
-  /* background-size: contain; */
-  /* background-color: yellow; */
-  /* background-size: cov; */
-  /* background-image: url("images/Main.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: 500px; */
-  /* background-position: -0%; */
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-size: auto; */
+  /* background-image: url("images/blob.svg"); */
+}
+
+.details {
+  color: white;
+}
+.myimage {
+  height: 537px;
+  width: 567px;
+  /* background-color: white; */
+  margin-top: 90px;
+  /* background-image: url("images/Suthesh-portfolio-pic.svg"); */
+  background-image: url("images/Suthesh-portfolio-dino-swap.svg");
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.myimage-2 {
+  height: 537px;
+  width: 567px;
+  /* background-color: white; */
+  margin-top: 90px;
+  background-image: url("images/Suthesh-portfolio-pic.svg");
+  /* background-image: url("images/Suthesh-portfolio-dino-swap.svg"); */
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hidden {
+  display: none;
 }
 
 h1 {
@@ -102,4 +130,14 @@ h3 {
 }
 .bottom2 {
   padding-left: 50px;
+}
+.secondPage {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/second-bg.svg");
+  background-size: cover;
+
+  /* background-color: blue; */
 }
