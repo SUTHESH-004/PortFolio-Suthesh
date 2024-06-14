@@ -1,5 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/bogart");
 
+:root {
+  --main-theme: #fcaf3cff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,21 +11,57 @@
 }
 body {
   height: 100%;
-  /* overflow: hidden; */
-  /* background-color: black; */
-  /* background-image: url("images/blob.svg  "); */
-  /* background-image: url("images/final-bg.svg");
-  background-size: contain; */
 }
 .firstPage {
   height: 100vh;
   width: 100%;
-  /* background-color: blue; */
   display: flex;
   flex-direction: row;
   background-image: url("images/final-bg.svg");
   /* background-repeat: 0px; */
+  background-color: white;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+.secondPage {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-image: url("images/second-bg.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+.leftBody-2 {
+  height: 100vh;
+  width: 30%;
+  flex: 1;
+  /* background-color: aqua; */
+}
+.rightBody-2 {
+  height: 100vh;
+  width: 70%;
+  /* flex: 1; */
+  /* background-color: blue; */
+}
+.thirdPage {
+  /* margin: 100px; */
+  height: 100vh;
+  width: 100%;
+  /* background-color: blue; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  background-image: url("images/final-bg.svg");
+  /* background-repeat: 0px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourthPage {
+  height: 100vh;
+  width: 100%;
+  /* padding: 0; */
+  /* margin: 0; */
+  background-image: url("images/second-bg.svg");
   background-size: cover;
 }
 .leftbody {
@@ -131,13 +171,68 @@ h3 {
 .bottom2 {
   padding-left: 50px;
 }
-.secondPage {
-  height: 100vh;
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  background-image: url("images/second-bg.svg");
-  background-size: cover;
-
+  position: fixed;
+  background-color: transparent;
+  /* border-top: solid 4px #fcaf3cff; */
+  /* border-bottom: solid 4px #fcaf3cff; */
+  /* border: solid 3px black; */
+}
+nav > * {
+  /* background-color: white; */
+  align-content: center;
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  border-radius: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  /* border: solid 3px black; */
+}
+.navalt {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 56px;
+  width: 56px;
+  margin: 10px;
   /* background-color: blue; */
+  /* border-radius: 2rem; */
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  position: fixed;
+}
+.menu {
+  height: 49px;
+  width: 49px;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10p; */
+  background-image: url("images/menu.svg");
+  background-repeat: no-repeat;
+  /* background-color: green; */
+  background-size: contain;
+}
+.navbuttons1 {
+  background-color: var(--main-theme);
+  color: white;
+}
+.navbuttons1:hover {
+  background-color: white;
+  /* opacity: 50%; */
+  color: black;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.navbuttons2 {
+  background-color: white;
+  color: black;
 }
