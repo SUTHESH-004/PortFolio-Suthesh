@@ -9,59 +9,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
-  height: 100%;
-}
-.firstPage {
+  overflow-x: hidden;
   height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-image: url("images/final-bg.svg");
-  /* background-repeat: 0px; */
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.secondPage {
-  height: 100vh;
-  width: 100%;
-  padding: 0;
-  background-image: url("images/second-bg.svg");
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-}
-.leftBody-2 {
-  height: 100vh;
-  width: 30%;
-  flex: 1;
-  /* background-color: aqua; */
-}
-.rightBody-2 {
-  height: 100vh;
-  width: 70%;
-  /* flex: 1; */
-  /* background-color: blue; */
-}
-.thirdPage {
-  /* margin: 100px; */
-  height: 100vh;
-  width: 100%;
-  /* background-color: blue; */
+  width: 400%;
   /* display: flex; */
   /* flex-direction: row; */
-  background-image: url("images/final-bg.svg");
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+}
+
+.fullbody {
+  display: flex;
+  flex-direction: row;
+}
+
+.firstPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  /* background-image: url("images/final-bg.svg"); */
   /* background-repeat: 0px; */
   background-repeat: no-repeat;
-  background-size: cover;
-}
-.fourthPage {
-  height: 100vh;
-  width: 100%;
-  /* padding: 0; */
-  /* margin: 0; */
-  background-image: url("images/second-bg.svg");
   background-size: cover;
 }
 .leftbody {
@@ -71,8 +46,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-color: var(--main-theme); */
   /* background-image: url("images/blob.svg"); */
-  background-size: cover;
+  /* background-size: cover; */
+  background-color: blueviolet;
   /* padding-right: 200px; */
 }
 .rightbody {
@@ -82,14 +59,70 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: blue;
+  /* background-color: var(--main-theme); */
+
   /* justify-content: center; */
   /* background-size: auto; */
   /* background-image: url("images/blob.svg"); */
 }
+.secondPage {
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url("images/second-bg.svg"); */
+  /* background-image: url("images/final-bg.svg"); */
+
+  /* background-color: aqua; */
+  padding: 0;
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: row;
+}
+.thirdPage {
+  /* margin: 100px; */
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  /* background-color: blue; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* background-image: url("images/final-bg.svg"); */
+
+  /* background-image: url("images/second-bg.svg"); */
+
+  /* background-repeat: 0px; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+.fourthPage {
+  height: 100vh;
+  width: 100vw;
+  /* padding: 0; */
+  /* margin: 0; */
+  background-color: blue;
+  /* background-image: url("images/second-bg.svg"); */
+  /* background-size: cover; */
+}
 
 .details {
-  color: white;
+  margin-top: 50px;
+  color: black;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 2;
 }
+.gonextbutton {
+  text-decoration: none;
+  height: 50px;
+  width: 300px;
+  border: 0px;
+  border-radius: 1.5rem 1.5rem 1.5rem 0rem;
+  position: fixed;
+  /* bottom: 80%; */
+  /* right: 80%; */
+}
+
 .myimage {
   height: 537px;
   width: 567px;
@@ -177,23 +210,21 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   height: 60px;
-  width: 100%;
   position: fixed;
+  z-index: 3;
+  left: 1rem;
+
   background-color: transparent;
-  /* border-top: solid 4px #fcaf3cff; */
-  /* border-bottom: solid 4px #fcaf3cff; */
-  /* border: solid 3px black; */
 }
 nav > * {
-  /* background-color: white; */
   align-content: center;
   text-align: center;
   height: 40px;
   width: 120px;
   border-radius: 2rem;
+  margin-right: 10px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
-  /* border: solid 3px black; */
 }
 .navalt {
   display: flex;
@@ -207,6 +238,7 @@ nav > * {
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
   position: fixed;
+  z-index: 3;
 }
 .menu {
   height: 49px;
@@ -235,4 +267,8 @@ a {
 .navbuttons2 {
   background-color: white;
   color: black;
+}
+.gonextbutton {
+  bottom: 10%;
+  right: 10%;
 }
