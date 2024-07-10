@@ -51,14 +51,17 @@ nav.addEventListener("click", function (event) {
 });
 
 // for moving the next slide
-const gonextbutton = document.querySelector(".gonextbutton");
-const firstPage = document.querySelector(".firstPage");
-const secondPage = document.querySelector(".secondPage");
-console.log(firstPage);
-console.log(secondPage);
-gonextbutton.addEventListener("click", function (e) {
-  alert("I am clicked");
-  console.log(e);
-  firstPage.style.display = "none";
-  secondPage.style.display = "flex";
-});
+// const gonextbutton = document.querySelector(".gonextbutton");
+// const firstPage = document.querySelector(".firstPage");
+// const secondPage = document.querySelector(".secondPage");
+// const fullbody = document.querySelector(".fullbody");
+// gonextbutton.addEventListener("click", function (e) {
+//   alert("I am clicked");
+//   console.log(e);
+//   // firstPage.style.display = "none";
+//   // secondPage.style.display = "flex";
+// });
+
+fetch("https://179cb37526024aaf9859c5bd8b916e17.api.mockbin.io/")
+  .then((Response) => Response.json())
+  .then((data) => console.log(data));
