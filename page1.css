@@ -1,0 +1,202 @@
+.firstPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-image: url("images/final-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leftbody-1 {
+  height: 100vh;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rightbody-1 {
+  height: 100vh;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myimage {
+  height: 537px;
+  width: 567px;
+  margin-top: 90px;
+  background-image: url("images/Suthesh-portfolio-dino-swap.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.myimage-2 {
+  height: 537px;
+  width: 567px;
+  margin-top: 90px;
+  background-image: url("images/Suthesh-portfolio-pic.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.FirstName {
+  height: 150px;
+  width: auto;
+  align-content: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 150px;
+  padding-bottom: 30px;
+  /* text-shadow: -15px 5px 30px rgba(0, 0, 0, 0.5); */
+}
+.LastName {
+  height: 110px;
+  margin-top: 20px;
+  width: auto;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  font-style: normal;
+}
+.portfolio {
+  padding-top: 100px;
+  height: 15px;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.profession {
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.Bottom {
+  height: 150px;
+  width: auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.bottom1,
+.bottom2 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bottom1:after,
+.bottom2::after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.bottom1:hover:after,
+.bottom2:hover:after {
+  transform: translate(0, 0);
+}
+
+.bottom1:active,
+.bottom2:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.bottom1:hover,
+.bottom2:hover {
+  outline: 0;
+}
+
+.bottom1 {
+  margin-right: 50px;
+}
+.bottom2 {
+  margin-left: 50px;
+}
+
+.navbuttons1 {
+  background-color: var(--main-theme);
+  color: white;
+}
+.navbuttons1:hover {
+  background-color: white;
+  color: black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.navbuttons2 {
+  background-color: white;
+  color: black;
+}
+.gonextbutton {
+  text-decoration: none;
+  height: 50px;
+  width: 300px;
+  border: 0px;
+  border-radius: 1.5rem 1.5rem 1.5rem 0rem;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  opacity: 40%;
+}
+.gobackbutton {
+  text-decoration: none;
+  height: 50px;
+  width: 300px;
+  border: 0px;
+  border-radius: 1.5rem 1.5rem 0rem 1.5rem;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  opacity: 40%;
+}
+.myimage {
+  z-index: 2;
+}
+.myimage-2 {
+  z-index: 1;
+  position: fixed;
+  /* scale: 1.1; */
+}
+.myimage,
+.myimage-2 {
+  transition: all 0.5s ease-in;
+}
+.details {
+  margin-top: 50px;
+  color: black;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}

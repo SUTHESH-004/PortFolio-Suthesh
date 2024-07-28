@@ -1,10 +1,8 @@
 @import url("https://fonts.cdnfonts.com/css/bogart");
-
 :root {
   /* --main-theme: #fcaf3cff; */
   --main-theme: #b8eae1ff;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +11,6 @@
 html {
   overflow-x: hidden;
 }
-
 body {
   overflow-x: hidden;
   height: 100vh;
@@ -24,150 +21,17 @@ body {
   overflow-y: hidden;
   /* white-space: nowrap; */
 }
-
 .fullbody {
   display: flex;
   flex-direction: row;
 }
 
-.firstPage {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  background-image: url("images/final-bg.svg");
-  /* background-repeat: 0px; */
-  /* background-color: #203a55ff; */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.leftbody-1 {
-  height: 100vh;
-  width: 52%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: var(--main-theme); */
-  /* background-image: url("images/blob.svg"); */
-  /* background-size: cover; */
-  /* background-color: white; */
-  /* padding-right: 200px; */
-}
-.rightbody-1 {
-  /* background-color: white; */
-  height: 100vh;
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: var(--main-theme); */
-  /* background-color: var(--main-theme); */
-
-  /* justify-content: center; */
-  /* background-size: auto; */
-  /* background-image: url("images/blob.svg"); */
-}
-.secondPage {
-  height: 100vh;
-  width: 100vw;
-  /* background-image: url("images/second-bg.svg"); */
-
-  /* background-image: url("images/final-bg.svg"); */
-  /* background-image: url("images/final-bg.svg"); */
-  /* transform: rotate(180%); */
-  /* background-color: var(--main-theme); */
-  padding: 0;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-left: 3px white;
-  border-left-style: dashed;
-}
-.rightbody-2 {
-  height: 100vh;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-image: url("images/person_with_laptop.png"); */
-  background-image: url("images/Main.jpg");
-  background-color: #b8eae1ff;
-  background-size: contain;
-  background-position: center;
-  /* background-size: 80%; */
-
-  background-repeat: no-repeat;
-}
-.leftbody-2 {
-  height: 100vh;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: self-start;
-  /* background-color: #203a55ff; */
-  /* margin-top: 20rem; */
-}
-.leftbody-2 > p {
-  font-size: 3rem;
-  line-height: 4.5rem;
-  /* font-family: "Dancing Script", cursive; */
-  font-family: "Josefin Sans", sans-serif;
-  margin-left: 3rem;
-  text-align: left;
-}
-.thirdPage {
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
-}
-.fourthPage {
-  height: 100vh;
-  width: 100vw;
-  background-color: blue;
-}
-
-.details {
-  margin-top: 50px;
-  color: black;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-}
-
-.myimage {
-  height: 537px;
-  width: 567px;
-  /* background-color: white; */
-  margin-top: 90px;
-  /* background-image: url("images/Suthesh-portfolio-pic.svg"); */
-  background-image: url("images/Suthesh-portfolio-dino-swap.svg");
-  /* background-position: center; */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.myimage-2 {
-  height: 537px;
-  width: 567px;
-  /* background-color: white; */
-  margin-top: 90px;
-  background-image: url("images/Suthesh-portfolio-pic.svg");
-  /* background-image: url("images/Suthesh-portfolio-dino-swap.svg"); */
-  /* background-position: center; */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 .hidden {
-  transition: ease 0.5s ease;
+  transition: all 0.3s ease-in-out;
   /* display: none; */
   opacity: 0;
   pointer-events: none;
 }
-
 h1 {
   display: inline-block;
   font-family: "Dancing Script", cursive;
@@ -179,50 +43,41 @@ h1 {
 h3 {
   font-family: "Josefin Sans", sans-serif;
 }
-.FirstName {
-  height: 150px;
-  width: auto;
-  align-content: center;
-  font-family: "Dancing Script", cursive;
-  /* font-optical-sizing: auto; */
-  font-size: 150px;
-  /* font-weight: <weight>; */
-  font-style: normal;
-  padding-bottom: 30px;
-  /* background-image:; */
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:700");
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #63b11e;
+  width: 30vmax;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 50% 50%;
 }
-.LastName {
-  height: 110px;
-  width: auto;
-  font-family: "Dancing Script", cursive;
-  /* font-optical-sizing: auto; */
-  font-size: 100px;
-  /* font-weight: <weight>; */
-  font-style: normal;
-}
-.portfolio {
-  height: 15px;
-  font-size: 15px;
-  padding-bottom: 50px;
-}
-.Bottom {
-  height: 50px;
-  width: auto;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Josefin Sans", sans-serif;
-  /* font-optical-sizing: auto; */
-  padding-top: 150px;
-  font-weight: 600;
-  font-style: italic;
-}
-.bottom1 {
-  padding-right: 50px;
-}
-.bottom2 {
-  padding-left: 50px;
-}
+
+@keyframes move {
+  0% {
+    transform: scale(1) translate(10px, -30px);
+  }
+  38% {
+    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+  }
+  40% {
+    transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg);
+  }
+  78% {
+    transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
+  }
+  80% {
+    transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg);
+  }
+  100% {
+    transform: scale(1) translate(10px, -30px);
+  }
+} */
+
+/* CSS */
+
 nav {
   display: flex;
   flex-direction: row;
@@ -230,10 +85,10 @@ nav {
   justify-content: space-evenly;
   height: 60px;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   left: 1rem;
-
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 nav > * {
   align-content: center;
@@ -244,6 +99,16 @@ nav > * {
   margin-right: 10px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+}
+nav > *:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+nav > :active {
+  opacity: 0.5;
 }
 .navalt {
   display: flex;
@@ -252,8 +117,6 @@ nav > * {
   height: 56px;
   width: 56px;
   margin: 10px;
-  /* background-color: blue; */
-  /* border-radius: 2rem; */
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
   position: fixed;
@@ -264,60 +127,17 @@ nav > * {
   width: 49px;
   align-items: center;
   justify-content: center;
-  /* margin: 10p; */
   background-image: url("images/menu.svg");
   background-repeat: no-repeat;
-  /* background-color: green; */
   background-size: contain;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 20px 30px -6px black; */
 }
-.navbuttons1 {
-  background-color: var(--main-theme);
-  color: white;
+.menu:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+  /* border: solid 2px black; */
 }
-.navbuttons1:hover {
-  background-color: white;
-  /* opacity: 50%; */
-  color: black;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-.navbuttons2 {
-  background-color: white;
-  color: black;
-}
-.gonextbutton {
-  text-decoration: none;
-  height: 50px;
-  width: 300px;
-  border: 0px;
-  border-radius: 1.5rem 1.5rem 1.5rem 0rem;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  opacity: 40%;
-}
-.gobackbutton {
-  text-decoration: none;
-  height: 50px;
-  width: 300px;
-  border: 0px;
-  border-radius: 1.5rem 1.5rem 0rem 1.5rem;
-  position: fixed;
-  bottom: 5%;
-  left: 5%;
-  opacity: 40%;
-}
-.myimage {
-  z-index: 2;
-}
-.myimage-2 {
-  z-index: 1;
-  position: fixed;
-  /* scale: 1.1; */
-}
-.myimage,
-.myimage-2 {
-  transition: all 0.5s ease-in;
+.menu:active {
+  opacity: 0.5;
 }

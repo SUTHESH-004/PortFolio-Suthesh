@@ -1,0 +1,91 @@
+.secondPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rightbody-2 {
+  height: 100vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("images/person_with_laptop.png"); */
+  /* background-image: url("images/Main.jpg"); */
+  background-color: #b8eae1ff;
+  background-size: contain;
+  background-position: center;
+  /* background-size: 80%; */
+
+  background-repeat: no-repeat;
+}
+.leftbody-2 {
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #203a55ff; */
+  /* margin-top: 20rem; */
+}
+.leftbody-2 > p {
+  font-size: 6rem;
+  /* line-height: 4.5rem; */
+  margin: 5px 5px 5px 0px;
+  font-family: "Dancing Script", cursive;
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* margin-left: 3rem; */
+  text-align: left;
+}
+.skills-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skill-category {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  /* border: solid 1px black; */
+  flex: 1 1 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.skill-header {
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-body {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  /* justify-content: center; */
+}
+.skill-body > p {
+  /* display: inline; */
+  margin: 10px 0px 10px 50px;
+  font-family: "Josefin Sans", sans-serif;
+  /* background-color: blue; */
+}
+.skill-body > p > i {
+  font-size: 25px;
+  /* margin: 10px 0   10px 0px; */
+  margin-right: 15px;
+}

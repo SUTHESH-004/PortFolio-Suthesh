@@ -65,3 +65,9 @@ nav.addEventListener("click", function (event) {
 fetch("https://179cb37526024aaf9859c5bd8b916e17.api.mockbin.io/")
   .then((Response) => Response.json())
   .then((data) => console.log(data));
+
+const contactme = document.querySelector(".bottom1");
+contactme.addEventListener("click", () => alert("i am clicked"));
+
+const cvresume = document.querySelector(".bottom2");
+cvresume.addEventListener("click", () => alert("i am clicked"));
