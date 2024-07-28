@@ -22,14 +22,14 @@ console.log(document.documentElement.clientWidth);
 
 const myimage1 = document.querySelector(".myimage");
 const myimage2 = document.querySelector(".myimage-2");
-myimage1.addEventListener("mouseover", function () {
-  myimage1.classList.add("hidden");
-  myimage2.classList.remove("hidden");
-});
-myimage2.addEventListener("mouseout", function () {
-  myimage1.classList.remove("hidden");
-  myimage2.classList.add("hidden");
-});
+// myimage1.addEventListener("mouseover", function () {
+//   myimage1.classList.add("hidden");
+//   myimage2.classList.remove("hidden");
+// });
+// myimage2.addEventListener("mouseout", function () {
+//   myimage1.classList.remove("hidden");
+//   myimage2.classList.add("hidden");
+// });
 
 //temporary hide for debugging
 const nav = document.querySelector("nav");
@@ -62,12 +62,16 @@ nav.addEventListener("click", function (event) {
 //   // secondPage.style.display = "flex";
 // });
 
-fetch("https://179cb37526024aaf9859c5bd8b916e17.api.mockbin.io/")
-  .then((Response) => Response.json())
-  .then((data) => console.log(data));
+// fetch("https://179cb37526024aaf9859c5bd8b916e17.api.mockbin.io/")
+//   .then((Response) => Response.json())
+//   .then((data) => console.log(data));
 
-const contactme = document.querySelector(".bottom1");
-contactme.addEventListener("click", () => alert("i am clicked"));
+// const contactme = document.querySelector(".bottom1");
+// contactme.addEventListener("click", () => alert("i am clicked"));
 
 const cvresume = document.querySelector(".bottom2");
-cvresume.addEventListener("click", () => alert("i am clicked"));
+cvresume.addEventListener("click", () => {
+  // alert("I am clicked");
+  const atag = document.querySelector(".download-cvresume");
+  atag.click();
+});
