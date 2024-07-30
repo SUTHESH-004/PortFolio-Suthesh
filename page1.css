@@ -9,13 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .glass {
   height: 100%;
   width: 100%;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   display: flex;
   flex-direction: row;
 }
@@ -33,21 +34,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  /* position: relative; */
   perspective: 1000px; /* Adds perspective to the 3D space */
 }
 
 .myimage,
 .myimage-2 {
-  height: 537px;
-  width: 567px;
+  /* height: 537px;
+  width: 567px; */
+  height: 100%;
+  width: 100%;
   margin-top: 90px;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
+  /* position: absolute; */
   backface-visibility: hidden;
   animation: flip 16s infinite;
-  transform-origin: center; /* Ensure smooth flip */
+  transform-origin: center; /*Ensure smooth flip*/
 }
 
 .myimage {
@@ -57,8 +61,9 @@
 
 .myimage-2 {
   background-image: url("images/Suthesh-portfolio-pic3.svg");
-  animation-delay: 0s; /* Delay to alternate the flip */
-  /* transform: rotateY(180deg); */
+  transform: rotateY(180deg);
+  animation-delay: 0s;
+  /* Delay to alternate the flip */
 }
 
 @keyframes flip {
@@ -216,6 +221,7 @@ a {
 }
 .myimage {
   z-index: 3;
+  position: fixed;
 }
 .myimage-2 {
   z-index: 2;
@@ -233,4 +239,56 @@ a {
   display: flex;
   align-items: center;
   z-index: 2;
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    overflow: auto;
+  }
+  body {
+    overflow-x: auto;
+    height: 1000%;
+    width: 100%;
+  }
+  .fullbody {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  .glass {
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+  }
+  .firstPage {
+    background-image: none;
+    background-color: #fcaf3cff;
+    flex-direction: column-reverse;
+  }
+  .leftbody-1 {
+    height: 100vh;
+    width: 100%;
+  }
+  .myimage,
+  .myimage-2 {
+    /* display: inline-block; */
+    /* position: relative; */
+    margin-top: 0;
+    animation: none;
+    top: auto;
+    left: 25%;
+    bottom: auto;
+    right: auto;
+    /* animation-delay: 100s; */
+    /* margin: auto; */
+  }
+  .rightbody-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* position: relative; */
+  }
 }
