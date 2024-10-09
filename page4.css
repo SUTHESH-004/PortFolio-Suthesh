@@ -5,12 +5,48 @@
   display: flex;
   align-items: center;
 }
-.leftBody-4 {
-  height: 400px;
-  width: 40%;
+.leftbody-4 {
+  height: 80%;
+  width: 50%;
+  /* background-color: blue; */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
   /* font-size: 300px; */
 }
-.leftBody-4 > p {
-  font-size: 200px;
+.project-2 {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 1.5rem;
+}
+.project-3 {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  background-color: rgb(120, 120, 18);
+  color: white;
+  border-radius: 1.5rem;
+}
+.project-2 > h2 {
+  font-size: 40px;
+}
+.project-3 > h2 {
+  font-size: 40px;
 }
